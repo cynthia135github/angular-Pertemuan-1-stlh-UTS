@@ -11,4 +11,14 @@
   <input [(ngModel)] = "a" type = "text"> *
   <input [(ngModel)] = "b" type = "text"> = 
   {{a*b}}
+
+  <br>
+  <br>
+
+ 
+
 </p>
+
+ <div *ngFor = "let buah of itembuah; let i = index">
+   {{i+1}}. {{buah.nama}} - {{buah.harga | currency : 'Rp'}}
+</div>
